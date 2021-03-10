@@ -23,8 +23,12 @@ function OnSubmitLogin(e) {
 
 
 
+    if(checkbox.checked){
+        alert(`Привіт, ${e.target.elements['user_login'].value}! Я тебе запамятав` )
+    }else{
+        alert(`Привіт, ${e.target.elements['user_login'].value}! Я тебе не запамятав` )
+    }
 
-    localStorage.setItem('user', dataLoginForm['user_login'])
 
 
 
@@ -32,23 +36,21 @@ function OnSubmitLogin(e) {
 
     
 
-    document.location.href = `/html/home.html?login=${dataLoginForm.user_login}`
-
-
-
-
-
-
-
-
-
-
-
-    if(checkbox.checked){
-        alert(`Привіт, ${e.target.elements['user_login'].value}! Я тебе запамятав` )
+    if(dataLoginForm['user_login'] == sessionStorage.getItem('login') && dataLoginForm['user_password'] ==  sessionStorage.getItem('password')){
+        document.location.href = `../html/home.html?login=${dataLoginForm.user_login}`
     }else{
-        alert(`Привіт, ${e.target.elements['user_login'].value}! Я тебе не запамятав` )
+        alert('Зареєструйтесь')
+        
     }
+
+
+
+
+
+
+
+
+
 
 
 

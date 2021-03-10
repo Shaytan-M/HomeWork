@@ -15,9 +15,11 @@ function regist(event) {
   }
 
   if (dataRegistForm['password'] !== dataRegistForm['repeat_password']) {
-    alert('asd');
+    alert('Паролі різні');
   } else {
     sessionStorage.setItem('login', dataRegistForm['login']);
     sessionStorage.setItem('password', dataRegistForm['password']);
+    alert('Ви зареєструвались)');
+    document.location.href = "../html/index.html";
   }
 }
