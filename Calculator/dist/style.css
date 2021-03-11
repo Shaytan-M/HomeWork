@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.table_wrapper {
+  margin: auto;
+  width: 300px;
+}
+table {
+  border-spacing: 0px;
+  width: 400px;
+  height: 300px;
+}
+td,
+th {
+  border: 1px solid black;
+  background-color: gray;
+  text-align: center;
+}
+.text {
+  user-select: none;
+}
