@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/style.css">
+
+</head>
+<body>
+    <div class="paint_wrapper">
+        <div class="form_wrapper">
+            <form action="" class="figur">
+                <div class="wrapp quadrate_wrapper"><input  onclick="chooesElement(event)" type="radio" name="figure" id="quadrate" value="block quadrate_wrapper">
+                    <label for="quadrate">
+                        <div class="block quadrate_block">
+
+                        </div>
+                    </label>
+                </div>
+               <div class="wrapp circle_wrapper"> <input  onclick="chooesElement(event)" type="radio" name="figure" id="circle" value="block circle_block">
+                <label for="circle">
+                    <div class="block circle_block"></div>
+                </label></div>
+                <div class="wrapp rhomb_wrapper"> <input  onclick="chooesElement(event)" type="radio" name="figure" id="rhomb" value="block rhomb_block">
+                    <label for="rhomb">
+                        <div class="block rhomb_block"></div>
+                    </label></div>
+                    <div class="wrapp triangle_wrapper"> <input  onclick="chooesElement(event)" type="radio" name="figure" id="triangle" value="triangle_block">
+                        <label for="triangle">
+                            <div class="triangle_block"></div>
+                        </label></div>
+            </form>
+            <form action="" class="color">
+                <input onclick="chooesColor(event)" name="color" type="radio" value="red" id="red" ><label for="red"> <div class="red" style="background-color: red;"> </div></label>
+                <input onclick="chooesColor(event)"  name="color" type="radio" value="green" id="green" ><label for="green"> <div class="red" style="background-color: green;"> </div></label>
+                <input onclick="chooesColor(event)" name="color" type="radio" value="black" id="black" ><label for="black"> <div class="red" style="background-color: black;"> </div></label>
+            </form>
+        </div>
+        <div class="page">
+           
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
