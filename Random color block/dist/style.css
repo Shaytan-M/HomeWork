@@ -1,0 +1,15 @@
+.block {
+  margin: 20px;
+  border: 2px solid black;
+  width: 1000px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.butt {
+  background-color: #00ff6a;
+}
+.color_block {
+  width: 100px;
+  height: 100px;
+}
