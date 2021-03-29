@@ -1,0 +1,14 @@
+{
+    "key": 123,
+    "name": "John",
+    "birthDate": "10.10.2021",
+    "isHuman": true,
+    "some_obj": {
+        "some_key": "some value"
+    },
+    "animals": [
+        "cat", "dog", "hors"
+    ]
+}
+
+
