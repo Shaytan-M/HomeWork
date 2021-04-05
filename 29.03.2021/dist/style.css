@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.block .item_wrapper {
+  border: 1px solid black;
+  height: 300px;
+}
+.block .item_wrapper:hover {
+  background-color: gray;
+}
+.block .item_wrapper h3 {
+  text-align: center;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
