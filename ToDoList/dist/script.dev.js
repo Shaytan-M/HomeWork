@@ -5,7 +5,6 @@ function save(dataInput) {
 
   if (editable) {
     putData('https://testinapi.herokuapp.com/todos/', {
-      isDone: check.checked ? true : false,
       id: editable.id,
       title: dataInput.target.enter.value
     }).then(function (res) {
@@ -15,7 +14,6 @@ function save(dataInput) {
     });
   } else {
     postTodo('https://testinapi.herokuapp.com/todos', {
-      isDone: check.checked ? true : false,
       title: dataInput.target.enter.value
     }).then(function (response) {
       printInfo();
@@ -35,7 +33,7 @@ function printInfo() {
     try {
       for (var _iterator = data[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
         var item = _step.value;
-        ToDoList.innerHTML += "<div style=\"background-color: ".concat(item.isDone ? 'gray' : '', " ;\" class=\"row\"><form id=").concat(item.id, "><div name=\"left\"><p>").concat(item.isDone, "</p> <p class=\"title\" name=\"title\">").concat(item.title, "</p></div> <div><button onclick=\"editInput(event)\"> Edit</button>  <button onclick=\"deleteInput(event)\"> Delete</button> </div></form></div>");
+        ToDoList.innerHTML += "<div style=\"background-color: ".concat(item.isDone ? 'gray' : '', " ;\" class=\"row\"><form id=").concat(item.id, "><div name=\"left\"> <p class=\"title\" name=\"title\">").concat(item.title, "</p></div> <div><button onclick=\"editInput(event)\">&#9997</button> <button onclick=\"deleteInput(event)\" >&#10006</button> </div></form></div>");
       }
     } catch (err) {
       _didIteratorError = true;

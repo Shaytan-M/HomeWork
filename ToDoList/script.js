@@ -5,7 +5,7 @@ function save(dataInput){
 
 
    if(editable){
-    putData('https://testinapi.herokuapp.com/todos/', {isDone: check.checked ? true : false, id: editable.id, title:dataInput.target.enter.value}).then(res => {
+    putData('https://testinapi.herokuapp.com/todos/', {id: editable.id, title:dataInput.target.enter.value}).then(res => {
 
 
         editable = null;
@@ -19,7 +19,7 @@ function save(dataInput){
     })     
 
    }else{
-    postTodo('https://testinapi.herokuapp.com/todos', {isDone: check.checked ? true : false, title: dataInput.target.enter.value}).then(response => {
+    postTodo('https://testinapi.herokuapp.com/todos', { title: dataInput.target.enter.value}).then(response => {
         printInfo()
     });
 
@@ -43,7 +43,7 @@ ToDoList.innerHTML = ''
     for(const item of data){
         
 
-        ToDoList.innerHTML += `<div style="background-color: ${item.isDone ? 'gray' : ''} ;" class="row"><form id=${item.id}><div name="left"><p>${item.isDone}</p> <p class="title" name="title">${item.title}</p></div> <div><button onclick="editInput(event)"> Edit</button>  <button onclick="deleteInput(event)"> Delete</button> </div></form></div>`
+        ToDoList.innerHTML += `<div style="background-color: ${item.isDone ? 'gray' : ''} ;" class="row"><form id=${item.id}><div name="left"> <p class="title" name="title">${item.title}</p></div> <div><button onclick="editInput(event)">&#9997</button> <button onclick="deleteInput(event)" >&#10006</button> </div></form></div>`
 
 
     }

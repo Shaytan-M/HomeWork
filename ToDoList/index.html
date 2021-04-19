@@ -10,27 +10,35 @@
 </head>
 
 <body>
-    <header>
-        <h1> to do list
-        </h1>
-    </header>
+    <div class="all_block_wrapper">
+        <div class="ToDoList_wrapper">
+            <div  class="title">
+                <h1> ToDo List
+                </h1>
+            </div>
 
-        <form id="form" onsubmit="save(event)">
-            <label>IsDone<input id="check"  type="checkbox"></label>
-            <input type="text" name="enter" id="enter"> 
-
-        <div class="button_wrapper">
-            <input type="submit" id="sub" value="SAVE">
-        </div>
+            <div class="form_wrapper">
+                <form id="form" onsubmit="save(event)">
+                   <div>
+                    
+                    <input type="text" placeholder="TASK" name="enter" id="enter">
     
-    </form>
-
-    <div class="ToDoList" id="ToDoList">
-        <div class="row"><div><p>IsDone</p> <p class="title">Title</p></div></div>
-
+                    <div class="button_wrapper">
+                        <input type="submit" id="sub" value="SAVE">
+                    </div>
+                   </div>
+    
+                </form>
+    
+                <div class="ToDoList" id="ToDoList">
+                    
+    
+    
+                </div>
+            </div>
+        </div>
 
     </div>
-
 
 
     <script src="script.js"></script>

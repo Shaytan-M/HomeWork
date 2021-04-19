@@ -1,20 +1,69 @@
 *{
-    padding: 0;
-    margin: 0;
+    color: #fff;
+
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
+body{
+    background: #352f5b;
+}
+
+.all_block_wrapper{
+    margin: 50px auto;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+
+
+    .ToDoList_wrapper{
+
+        .title{
+           
+
+            h1{
+                text-align: center;
+            }
+        }
+
+
+    }
+}
 
 form{
     display: flex;
+    justify-content: center;
     width: 800px;
     margin-top: 20px;
 
 
-    input[type = 'text']{
+    input{
+        margin-top: 10px;
+        border-radius: 10px;
+        height: 50px;
         width: 400px;
+        background: rgba(0,0,0,0.2);
+        border: none;
+        font-size: 20px;
+
+
+        &:focus{
+            outline: none;
+            box-shadow: 1px 1px 10px 5px rgb(9, 9, 107);
+        }
+
+
+        &[type="submit"]{
+            border: 1px solid #423a6f;
+            box-shadow: 5px 5px 10px black;
+            background: rgba(97, 95, 95, 0.2);
+        }
 
     }
+
+
 
 
 
@@ -23,33 +72,43 @@ form{
 }
 
 .ToDoList{
-    width: 800px;
-    height: 500px;
+    margin: 20px;
     font-size: 30px;
-
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .row{
-        display: flex;
-        background-color: antiquewhite;
-        margin: 5px;
-        justify-content: space-between;
+        
+        width: 600px;
+        height: 50px;
+        margin: 1px;
+        background: #423a6f;
+        border-radius: 10px;
+
+
 
         form{
-            justify-content: space-between;
-        }
-
-
-        div{
+            margin: 0px;
+            height: 50px;
+            padding: 10px;
             display: flex;
-            justify-content: space-evenly;
-            
+            justify-content: space-between;
+            width: 600px;
 
-            .title{
-                margin-left: 100px;
-                text-align: center;
+            button{
+                
+                background: #423a6f;
+                border: none;
+                color: white;
+                font-size: 20px;
             }
+
         }
     }
+
+
 }
 
 
