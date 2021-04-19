@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(196, 196, 154);
+}
+
+.block_all_wrapper{
+    background-color: rgb(247, 244, 242);
+    height: 700px;
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .wrapper_form{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        color: blue;
+
+
+
+            form{
+                padding: 10px;
+
+                input{
+                    outline: none;
+                    background: none;
+                    border: none;
+                    
+                }
+                input[type="text"]{
+                    border-bottom: 1px solid blue;
+                }
+            }
+    }
+        
+
+    .weather{
+        padding: 10px;
+        width: 750px;
+        height: 300px;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        display: none;
+
+
+            .weather_block_top{
+                color: blue;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .weather_block_bottom{
+                display: flex;
+
+
+
+
+                .left_block{
+                    width: 50%;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+    
+    
+    
+    
+                }
+
+                .right_block{
+                    align-items: center;
+                    width: 50%;
+                    font-size: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+
+                        p{
+                            margin: 5px;
+                        }
+                }
+            }
+            
+
+           .error{
+               text-align: center;
+               padding: 50px;
+
+
+               h1{
+                   color: chocolate;
+               }
+           }
+
+
+        
+    }
+
+
+    .hour_weather_wrapepr{
+        
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+        padding: 10px;
+        width: 750px;
+        height: 300px;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+
+        .hour_weather_wrapepr_top_block{
+            color: blue;
+        }
+
+        .hour_weather_wrapepr_bottom_block{
+            height: 80%;
+            display: flex;
+
+
+
+            .hourly_block{
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+                .weather_inf{
+                    p{
+                        font-size: 20px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
