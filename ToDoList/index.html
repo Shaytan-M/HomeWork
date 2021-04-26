@@ -10,30 +10,48 @@
 </head>
 
 <body>
+    <div class="load">
+        <hr/><hr/><hr/><hr/>
+      </div>
     <div class="all_block_wrapper">
         <div class="ToDoList_wrapper">
-            <div  class="title">
+            <div class="title">
                 <h1> ToDo List
                 </h1>
             </div>
 
             <div class="form_wrapper">
                 <form id="form" onsubmit="save(event)">
-                   <div>
-                    
-                    <input type="text" placeholder="TASK" name="enter" id="enter">
-    
-                    <div class="button_wrapper">
-                        <input type="submit" id="sub" value="SAVE">
+                    <div class="upload_wrapper">
+                       <div class="label">
+                        <label class="upload_file"> <input type="file" hidden id="file"
+                            onchange="selectFile(event)"><img
+                            src="https://cdn.pixabay.com/photo/2016/01/03/00/43/upload-1118929_1280.png"
+                            alt=""></label>
+
+                            <div class="file_img"> </div>
+                       </div>
                     </div>
-                   </div>
-    
+                    <div>
+
+                        
+                        <div class="input_photo_wrapper">
+
+
+                            <input type="text" placeholder="TASK" name="enter" id="enter">
+
+                        </div>
+                        <div class="button_wrapper">
+                            <input type="submit" id="sub" value="SAVE">
+                        </div>
+                    </div>
+
                 </form>
-    
+
                 <div class="ToDoList" id="ToDoList">
-                    
-    
-    
+
+
+
                 </div>
             </div>
         </div>
